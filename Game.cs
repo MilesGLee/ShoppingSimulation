@@ -106,6 +106,7 @@ namespace ShoppingSimulation
         void Save() 
         {
             StreamWriter writer = new StreamWriter("SaveData.txt");
+            //only player needs to be saved.
             _player.Save(writer);
             writer.Close();
         }
